@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Art Feed</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="app-layout">
+        <aside class="sidebar">
+        <header class="sidebar-header">
+            <h1>Favorites</h1>
+        </header>
+
+        <form id="add-tag-form" class="tag-form">
+            <input 
+            type="text" 
+            id="tag-input" 
+            placeholder="e.g. morrigan_aensland" 
+            autocomplete="off" 
+            required 
+            />
+            <button type="submit" id="add-tag-btn">Add</button>
+        </form>
+
+        <nav class="favorites-list" id="favorites-list" aria-label="Favorite Characters"></nav>
+        </aside>
+
+        <main class="main-content">
+        <div id="status-message" class="status-message hidden"></div>
+
+        <article id="art-card" class="art-card hidden">
+            <div class="art-image-wrapper">
+            <img id="art-image" src="" alt="Daily character artwork" />
+            </div>
+            <footer class="art-details">
+            <h2 id="art-character">Character Name</h2>
+            <p id="art-artist">Artist: Unknown</p>
+            <a id="art-source" href="#" target="_blank" rel="noopener noreferrer">View Original Post</a>
+            </footer>
+        </article>
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+    </body>
+    </html>
